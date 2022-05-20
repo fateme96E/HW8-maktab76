@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 727px;
+    font-family: sans-serif;
+    margin: 0;
+    margin-left: 169px;
+}
+
+.left-side {
+    background-color: rgb(246, 247, 251);
+    width:50%;
+    height: 727px;
+
+}
+
+.right-side {
+    /* background: url("/images/pic.png"); */
+    width:50%;
+    /* background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+.right-side img {
+    width: 550px;
+    height: 727px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-side h2 {
+    position: absolute;
+    left: 22%;
+    top: 185px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.left-side p {
+    position: absolute;
+    left: 22%;
+    top: 227px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+.left-side .input-container {
+    position: absolute;
+    left: 22%;
+    top: 288px;
+}
+.left-side .input-container input{
+    border: none;
+    background-color: #ffffff;
+    width: 330px;
+    height: 29px;
+    margin-top: 7px;
+    box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    padding:5px;
+}
+
+.left-side .input-container input[type=email]{
+    margin-bottom: 14px;
+}
+
+.left-side .input-container input[type=password]{
+    letter-spacing: 1px;
+}
+
+.left-side .input-container .form-label {
+    font-size: 14px;
+}
+
+.left-side .form-remember {
+    position: absolute;
+    top: 438px;
+    left: 334px;
+}
+
+.left-side .form-remember .remember-me {
+    font-size: 12px;
+    color: #8d8d8d;
+    position: absolute;
+    width: 92px;
+    top: 4px;
+}
+
+.left-side .form-remember input[type='checkbox'] {
+    accent-color:#d57c0f;
+    width: 18px;
+    height: 18px;
+}
+
+.form-forgot a{
+    position: absolute;
+    text-align: center;
+    text-decoration: underline;
+    color: #8d8d8d;
+    cursor: pointer;
+    top: 443px;
+    left: 580px;
+    font-size: 12px;
+}
+
+.login-button{
+    position: absolute;
+    width: 328px;
+    height: 40px;
+    background-color: #e98d1c;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    top: 500px;
+    left: 342px;
+    border:none;
+    border-radius: 3px;
+}
+
+.login-button:hover {
+    background-color: rgb(255, 255, 255);
+    border: rgb(220, 189, 247);
+    box-shadow: 0px 0px 15px 4px #e98d1c;
+    font-size: 1em;
+    color: #e98d1c;
+}
+
