@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Question 3</title>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="name-container">
+                <label >Enter your name:</label>
+                <input type="text" name="username" id="username" placeholder="enter your name">
+
+            </div>
+
+            <div class="password-container">
+                <label >Enter your password:</label>
+                <input type="password" name="password" id="password" placeholder="enter your password">
+            </div>
+
+        </form>
+        <button onclick="myFunction()">Click me</button>
+    </div>
+
+
+    <script>
+        let timeId;
+        let newUser = {};
+        function myFunction() {
+            newUser = {
+                username: document.getElementById("username").value,
+                password: Number(document.getElementById("password").value)
+            };
+            localStorage.setItem('UserInfo', JSON.stringify(newUser));
+            timeId = setTimeout(alertInfo, 5000 );
+        }
+        function alertInfo() {
+            alert(`Welcome ${newUser.username} and your password is ${newUser.password}`);
+        }
+
+    </script>
+</body>
+</html>
