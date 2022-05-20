@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Question 2</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="/action_page.php">
+            <div class="name-container">
+                <label >Enter your name:</label>
+                <input type="text" name="username" id="username" placeholder="enter your name"><br>
+            </div>
+
+            <div class="password-container">
+                <label >Enter your password:</label>
+                <input type="password" name="password" id="password" placeholder="enter your password">
+            </div>
+
+            <button onclick="myFunction()">Click me</button>
+        </form>
+    </div>
+
+
+    <script>
+        function UserInfo(username, password) {
+            this.username = username;
+            this.password = password;
+        }
+        function myFunction() {
+            let newUser = new UserInfo(document.getElementById("username").value, Number(document.getElementById("password").value));
+            localStorage.setItem('UserInfo', JSON.stringify(newUser));
+            console.log(localStorage.getItem('UserInfo'), newUser);
+    }
+    </script>
+</body>
+</html>
